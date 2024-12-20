@@ -1,0 +1,153 @@
+.Banner {
+    margin-top: 0;
+    padding: 0;
+    display: grid;
+    max-width: 100%;
+    height: fit-content;
+    position: relative;
+}
+
+.primary-title {
+    position: absolute;
+    top: 32%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14vw;
+    font-weight: bold;
+    z-index: 5;
+    color: #051a6f;
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.Banner .secondary-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #051a6f;
+    font-size: 9vw;
+    font-weight: bold;
+    margin-top: 14%;
+    z-index: 5;
+    text-shadow:
+        0 0 6px rgba(255, 255, 255, 0.9),
+        0 0 12px rgba(255, 255, 255, 0.6),
+        0 0 18px rgba(255, 255, 255, 0.4);
+}
+
+.Banner .BannerIMG1 {
+    width: 100%;
+    height: auto;
+}
+
+.Banner .BannerIMG2 {
+    width: 40%;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.Banner .BannerIMG3 {
+    width: 80%;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+}
+
+.Banner .BannerIMG4 {
+    padding: 0;
+    width: 100%;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+}
+
+
+/* Arrow Down Section */
+.arrow-down {
+    text-align: center;
+    margin-top: 20%;
+    margin-bottom: 2%;
+}
+
+.arrow-down i {
+    font-size: 2em;
+    color: #05196ba6;
+    animation: bounce 2s infinite;
+    /* Bounce animation for arrow */
+}
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-20px);
+    }
+
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+
+/* MOBILE */
+@media (max-width: 750px) {
+    .Banner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .Banner .primary-title {
+        position: absolute;
+        width: 80%;
+        margin: 0;
+        left: auto;
+        transform: none;
+    }
+
+    .Banner .BannerIMG1 {
+        height: 30%;
+        position: relative;
+    }
+
+    .Banner .secondary-title {
+        font-size: 6vw;
+        margin-top: 5%;
+        position: absolute;
+        top: auto;
+        left: auto;
+        transform: none;
+        text-align: center;
+    }
+}
+
+/* DESKTOP */
+@media (min-width: 750px) {
+    .Banner {
+        width: 100%;
+    }
+
+    .Banner .primary-title {
+        width: 90%;
+        margin-top: 20%;
+        z-index: 5;
+    }
+}

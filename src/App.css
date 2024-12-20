@@ -13,43 +13,29 @@
   }
 }
 
-.App-header {
- 
-}
-
 .App-link {
-  color: #61dafb;
-
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  color: rgb(242, 239, 206)
 }
 
 #Body {
-    top: 0;
-    float: left;
-    background-color: lightgray;
-    width: 100%;
-    height: fit-content;
-    text-align: left;
+  top: 0;
+  float: left;
+  background-color: #fffde6;
+  width: 100%;
+  height: fit-content;
+  text-align: left;
 }
 
 #Canvas {
-    float: left;
-    margin-top: 10%;
-    margin-left: 25%;
-    width: 50%;
-    height: 1500px;
-    top: 0px;
-    background-color: cornflowerblue;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    padding: 100px;
+  float: left;
+  margin-top: 10%;
+  margin-left: 25%;
+  width: 50%;
+  height: 1500px;
+  top: 0px;
+  background-color: #fffde6;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  padding: 100px;
 }

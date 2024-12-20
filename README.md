@@ -1,6 +1,7 @@
-# Getting Started with Create React App
+![image info](./src/images/logo_nav.png)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Stepheight Website
+v.2.0.0
 
 ## Available Scripts
 

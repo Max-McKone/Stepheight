@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+.admin-link {
+    margin-right: 20px;
+}
+
+.footer a {
+    color: #0a0079;
+}
+
+.footer-kickingbrass a {
+    color: #ffe690;
+}
+
+
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: #d8d6c2;
+    color: #666;
+    text-align: center;
+}
+
+.footer-kickingbrass {
+    background-color: #1b0c2e;
+    color: #ffe690;
+}
+
+.footer-icons {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.footer-icon {
+    width: 30px;
+    height: 30px;
+    margin: 0 20px;
+}
+
+.footer-text {
+    display: block;
+    width: 100%;
+}
+
+.footer-text-content {
+    margin-top: 0;
+    font-size: 16px;
+}
+
+@media (max-width: 750px) {
+    .footer {
+        flex-direction: column;
+        padding: 40px;
+    }
+
+    .footer-icons {
+        display: flex;
+    }
+
+    .footer-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .footer-icon-kickingbrass {
+        filter: invert(100%);
+    }
+
+    .footer-text-content {
+        margin-top: 10px;
+        font-size: 14px;
+    }
+}

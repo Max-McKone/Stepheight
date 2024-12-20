@@ -1,0 +1,61 @@
+p {
+    max-width: 600px;
+}
+
+.aboutus-content {
+    text-align: center;
+    background-color: #fffde6;
+}
+
+.aboutus-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #051a6f;
+}
+
+.aboutus-content h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #051a6f;
+}
+
+.aboutus-content p {
+    color: #051a6f;
+    font-size: 1em;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.TeamIMG {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+}
+
+.team-content {
+    color: #051a6f;
+    background-color: #fffde6;
+}
+
+@media (min-width: 751px) {
+
+    .aboutus-content h1,
+    .aboutus-content h3,
+    .aboutus-content p {
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 751px) {
+    .aboutus-content h1,
+    .aboutus-content h3,
+    .aboutus-content p {
+        max-width: 400px;
+    }
+}

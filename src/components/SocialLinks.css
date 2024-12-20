@@ -1,0 +1,31 @@
+.social-links {
+    position: fixed;
+    bottom: 10%;
+    right: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.navbar-icon {
+    width: 50px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.navbar-icon:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+.kicking-brass-theme .navbar-icon {
+    filter: invert(1);
+}
+
+@media (min-width: 768px) {}
+
+@media (max-width: 768px) {
+    .social-links {
+        display: none;
+    }
+}

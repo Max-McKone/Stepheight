@@ -1,0 +1,92 @@
+.aboutus-container {
+    max-width: 800px;
+}
+
+.MuiCardHeader-subheader {
+    color: #7d7d7d !important;
+    font-family: 'Montserrat', serif;
+}
+
+.team-card {}
+
+.team-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: none;
+}
+
+.image-card {
+    flex: 1;
+    min-width: 200px;
+    max-width: 300px;
+    background-color: #d8d6c2 !important;
+    padding: none !important;
+}
+
+.poster-card {
+    align-items: center;
+    padding: 20px;
+    background-color: #fffde6;
+    margin-top: 20px;
+}
+
+.poster {
+    max-width: 400px;
+}
+
+.pronouns {
+    color: #757575;
+}
+
+
+@media (min-width: 768px) {
+    .MuiPaper-root .team-card {
+        max-width: 1000px;
+    }
+
+    .h1,
+    .h2,
+    .h3,
+    .p {
+        min-width: 600px;
+        max-width: 800px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .h2,
+    .h3 {
+        min-width: 600px;
+        max-width: 800px;
+    }
+
+    .p {
+        min-width: 200px;
+        max-width: 400px;
+    }
+
+    .team-card {
+        padding: 40px;
+    }
+
+    .image-card {
+        flex: 1;
+        min-width: 300px;
+        max-width: 400px;
+        background-color: #d8d6c2 !important;
+        padding: none !important;
+    }
+
+    .poster-card {
+        padding: 40px;
+    }
+}

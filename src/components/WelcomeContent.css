@@ -1,0 +1,350 @@
+/* WelcomePage.css */
+
+/* Title Base Styles */
+.Title {
+    position: absolute;
+    top: 32%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14vw;
+    font-weight: bold;
+    z-index: 5;
+    color: #051a6f;
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+/* Title Hover Effect */
+.Title:hover {
+    animation: none;
+    /* Disables bounce */
+}
+
+/* Page Background */
+.welcome-page {
+    background-color: #fffeec;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Promo Section */
+.promo-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    gap: 0;
+    padding: 0;
+}
+
+.promo-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.promo-image {
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+}
+
+.promo-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: gif-animation 3s linear infinite;
+    /* Default GIF speed */
+    transition: animation-duration 0.3s ease;
+}
+
+/* Hover Effect for GIF */
+.promo-image img:hover {
+    animation-duration: 1.5s;
+    /* Speeds up the GIF animation */
+}
+
+/* Promo Content */
+.promo-content {
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.promo-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #051a6f;
+}
+
+.promo-button {
+    display: inline-block;
+    align-self: center;
+    width: 20%;
+    background-color: transparent;
+    color: #051a6f;
+    border: 2px solid #051a6f;
+    padding: 12px 240px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.promo-button:hover {
+    background-color: #051a6f;
+    color: #fff;
+}
+
+/* KB Banner */
+.kb-banner {
+    position: relative;
+    width: 100%;
+}
+
+.kb-banner-image {
+    width: 100%;
+    height: 200%;
+    display: block;
+    object-fit: cover;
+}
+
+.kb-logo-link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    max-width: 80%;
+}
+
+.kb-logo {
+    mask-image: none;
+    -webkit-mask-image: none;
+    transition: transform 0.3s ease;
+}
+
+.kb-logo-link:hover .kb-logo {
+    transform: scale(1.1);
+}
+
+/* Quote Section */
+.quote-section {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10%;
+    margin-top: 20%;
+    align-items: center;
+    padding: 20px;
+    font-size: 24px;
+}
+
+.quote-text {
+    margin-right: 10px;
+    color: #05196b;
+}
+
+.quote-author {
+    font-size: 18px;
+    font-style: italic;
+    color: #05196b;
+}
+
+/* Arrow Down */
+.arrow-down {
+    text-align: center;
+    margin-top: 20%;
+    margin-bottom: 2%;
+}
+
+.arrow-down i {
+    font-size: 2em;
+    color: #05196ba6;
+}
+
+/* Desktop Styles */
+@media (min-width: 768px) {
+    .Title {
+        width: 90%;
+        margin-top: 20%;
+        z-index: 5;
+    }
+
+    .quote-section {
+        margin-top: 20%;
+    }
+
+    .promo-section {
+        flex-direction: column;
+        padding-top: 20%;
+    }
+
+    .promo-item {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: auto;
+        align-items: stretch;
+    }
+
+    .promo-image {
+        width: 80%;
+        height: 100%;
+    }
+
+    .promo-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .promo-content {
+        width: 20%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        height: 100%;
+    }
+
+    .promo-content h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+        color: #051a6f;
+    }
+
+    .promo-button {
+        font-size: 16px;
+        background-color: transparent;
+        color: #051a6f;
+        border: 2px solid #051a6f;
+        padding: 12px 24px;
+        cursor: pointer;
+        border-radius: 4px;
+        text-decoration: none;
+        transition: background-color 0.3s, color 0.3s;
+        width: auto;
+        max-width: 200px;
+    }
+
+    .promo-button:hover {
+        background-color: #051a6f;
+        color: #fff;
+    }
+
+    .kb-logo {
+        width: 800px;
+        height: 100%;
+        transition: transform 0.3s ease;
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .Title {
+        top: 20%;
+        position: absolute;
+        width: 100%;
+        margin: 0;
+        left: auto;
+        transform: none;
+    }
+
+    .quote-section {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 5%;
+        margin-left: 15%;
+        align-items: center;
+        padding: 20px;
+        font-size: 24px;
+    }
+
+    .quote-author {
+        font-size: 16px;
+    }
+
+    .arrow-down {
+        margin-top: 60%;
+    }
+
+    .kb-logo {
+        width: 100%;
+    }
+
+    .kb-banner-image {
+        width: 200%;
+        display: block;
+        height: 100%;
+    }
+
+    .promo-section {
+        flex-direction: column;
+        padding-top: 10%;
+    }
+
+    .promo-item {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        align-items: center;
+    }
+
+    .promo-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .promo-image img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .promo-content {
+        display: flex;
+        padding: 5%;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10%;
+    }
+
+    .promo-content h2 {
+        font-size: 24px;
+        margin-right: 10px;
+        color: #051a6f;
+        flex: 1;
+    }
+
+    .promo-button {
+        font-size: 16px;
+        background-color: transparent;
+        color: #051a6f;
+        border: 2px solid #051a6f;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 4px;
+        text-decoration: none;
+        transition: background-color 0.3s, color 0.3s;
+        flex-shrink: 0;
+        margin-right: 10%;
+    }
+
+    .promo-button:hover {
+        background-color: #051a6f;
+        color: #fff;
+    }
+}

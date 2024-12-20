@@ -1,0 +1,36 @@
+.aboutus-content {
+    text-align: center;
+    max-width: 100%;
+    height: auto;
+    padding: 0px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.aboutus-content h1 {
+    font-size: 2em;
+    color: #333;
+}
+
+.aboutus-content p {
+    font-size: 1em;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .aboutus-content {
+        padding: 100;
+    }
+
+    .aboutus-content h1 {
+        font-size: 1.5em;
+    }
+
+    .aboutus-content p {
+        font-size: 0.9em;
+        width: 70%;
+    }
+}

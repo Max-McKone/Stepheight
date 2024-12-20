@@ -1,37 +1,36 @@
-import React from 'react';
-import './App.css';
+import React, { useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { ThemeProvider } from './contexts/ThemeContext';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import Home from './pages/Home';
+import KickingBrass from './pages/KickingBrass';
+import AboutUs from './pages/AboutUs';
+import Impressum from './pages/Impressum';
+
+function ScrollToTop() {
+    const location = useLocation();
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [location]);
+    return null;
+}
 
 function App() {
-
     return (
-        <>
-
-        <div id='Header'>
- 
-        </div>
-
-        <div id='Body'>
-
-            <Navbar />
-
-            <div id='Canvas'>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                        ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                        in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                        Excepteur sint occaecat cupidatat non proident,
-                        sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>  
-            </div>
-            
-        </div> 
-            
-        </>
-        
-        
+        <ThemeProvider>
+            <Router>
+                <Navbar />
+                <ScrollToTop />
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/kickingbrass" element={<KickingBrass />} />
+                    <Route path="/aboutus" element={<AboutUs />} />
+                    <Route path="/impressum" element={<Impressum />} />
+                </Routes>
+                <Footer />
+            </Router>
+        </ThemeProvider>
     );
 }
 

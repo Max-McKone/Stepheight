@@ -1,68 +1,178 @@
-/* 
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');
 
-
-#Nav {
-    color: #ffffff;
+#Nav .MuiContainer-maxWidthXl {
     display: flex;
     align-items: center;
-    height: fit-content;
-    padding: 10px 0%;
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 20%;
-    z-index: 999;
-    background-color: red;
-    justify-content: space-between; 
-}
-
-#Nav .Navbox {
-    margin-top: 1%;
-    box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.2);
-    opacity: .8;
-    height: 70px;
-    align-items: center;
-    background-color: midnightblue;
-    right: 0;
     width: 100%;
-    backdrop-filter: blur(10px);
-    float: right;
+    max-width: 100%;
+    max-height: 10%;
+    padding: 0 10%;
+    backdrop-filter: blur(2px);
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.4);
 }
 
-#Nav #Nav_Download {
-    
+.navbar-logo {
+    width: 80px;
+    top: 0;
+    margin-bottom: 10px;
 }
 
-#Nav a {
-	text-decoration: none;
-	color: #ffffff;
-	font-weight: bold;
-	font-kerning: normal;
+
+.navbar-default .MuiContainer-maxWidthXl {
+    background-color: #fffde6be !important;
+
 }
 
-#Nav a:hover {
-	color: #695EA0;
+.navbar-default .MuiButton-root {
+    color: #051a6f;
 }
 
-#Nav img {
-    height: 70%;
+.navbar-kickingbrass .MuiContainer-maxWidthXl {
+    background-color: #1b0c2eca !important;
 }
 
-#Nav #placeholder {
-    height: 50px;
-    width: 50px;
-    background-color: red;
+.navbar-kickingbrass .MuiButton-root {
+    color: #ffe690 !important;
 }
 
-#Nav_Selection {
-    width: 60%;
-    height: 100%;
-    background-color: none;
-    justify-content: space-between;
-    align-items: center;
+#Nav .MuiToolbar-root {
     display: flex;
-    position: absolute;
-    left: 20%;
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px 8px 0;
 }
 
-*/
+#Nav .MuiBox-root {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+
+#Nav .MuiButton-root {
+    margin: 0 10px;
+    font-family: 'Maven Pro', sans-serif;
+    color: #051a6f;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    display: none;
+    cursor: pointer;
+    position: relative;
+    width: 30px;
+    height: 23px;
+}
+
+.nav-toggle-label span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #051a6f;
+    border-radius: 3px;
+    opacity: 1;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-toggle-label span:nth-child(1) {
+    top: 0px;
+}
+
+.nav-toggle-label span:nth-child(2) {
+    top: 10px;
+}
+
+.nav-toggle-label span:nth-child(3) {
+    top: 20px;
+}
+
+.navbar-kickingbrass {
+    background-color: #1b0c2ec1 !important;
+}
+
+.navbar-kickingbrass .navbar-logo {
+    filter: invert(100%);
+}
+
+.navbar-kickingbrass .MuiButton-root,
+.navbar-kickingbrass .nav-toggle-label span {
+    color: #fffde6;
+}
+
+.navbar-kickingbrass .nav-toggle-label span {
+    background: #ffe690;
+}
+
+@media (min-width: 750px) {
+    .navbar-logo {
+        padding-top: 20px;
+    }
+}
+
+@media (max-width: 750px) {
+    .navbar-logo {
+        width: 50px;
+        height: auto;
+    }
+
+    .nav-toggle {
+        display: none;
+    }
+
+    #Nav .MuiBox-root {
+        flex-wrap: wrap;
+        display: flex;
+        width: 85%;
+        font-size: larger;
+        flex-grow: 1;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-toggle-label {
+        display: block;
+        position: absolute;
+        top: 35%;
+        right: 10px;
+        z-index: 2;
+    }
+
+    .nav-toggle:checked~.nav-items {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-items {
+        display: none;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .nav-toggle:checked~.nav-items {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-toggle:checked~.nav-icons {
+        background-color: aqua;
+    }
+
+    .nav-toggle:checked~.nav-toggle-label span:nth-child(1) {
+        top: 0px;
+        left: 10px;
+    }
+
+    .nav-toggle:checked~.nav-toggle-label span:nth-child(2) {
+        top: 10px;
+        left: 5px;
+    }
+
+    .nav-toggle:checked~.nav-toggle-label span:nth-child(3) {
+        top: 20px;
+    }
+}

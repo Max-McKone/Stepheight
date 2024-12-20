@@ -1,0 +1,19 @@
+/* Updates.css */
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');
+
+.updates-content {
+    text-align: center;
+    font-family: 'Maven Pro', sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: #fffde6;
+}
+
+.updates-content h1 {
+    color: #333;
+}
+
+.updates-content p {
+    color: #666;
+    font-size: 16px;
+}
