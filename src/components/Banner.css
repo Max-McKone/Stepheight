@@ -149,4 +149,8 @@
         margin-top: 20%;
         z-index: 5;
     }
+
+    h3 {
+        margin-top: 10%;
+    }
 }
