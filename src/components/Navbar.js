@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './Navbar.css';
 import logo from '../images/logo_nav.png';
@@ -7,47 +7,26 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
-import Paper from '@mui/material/Paper';
-import Divider from '@mui/material/Divider';
-import MenuList from '@mui/material/MenuList';
+import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
-import ListItemText from '@mui/material/ListItemText';
 
 const pages = ['ABOUT_US'];
-
-function Dropdown() {
-  <Paper sx={{ width: 320 }}>
-    <MenuList dense>
-      <MenuItem>
-        <ListItemText inset>Single</ListItemText>
-      </MenuItem>
-      <MenuItem>
-        <ListItemText inset>1.15</ListItemText>
-      </MenuItem>
-      <MenuItem>
-        <ListItemText inset>Double</ListItemText>
-      </MenuItem>
-      <MenuItem>
-        Custom: 1.2
-      </MenuItem>
-      <Divider />
-      <MenuItem>
-        <ListItemText>Add space before paragraph</ListItemText>
-      </MenuItem>
-      <MenuItem>
-        <ListItemText>Add space after paragraph</ListItemText>
-      </MenuItem>
-      <Divider />
-      <MenuItem>
-        <ListItemText>Custom spacing...</ListItemText>
-      </MenuItem>
-    </MenuList>
-  </Paper>
-}
 
 export default function Navbar() {
   const location = useLocation();
   const isKickingBrassPage = location.pathname === '/kickingbrass';
+
+  // State for dropdown menu
+  const [anchorEl, setAnchorEl] = useState(null);
+  const open = Boolean(anchorEl);
+
+  const handleOpenMenu = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleCloseMenu = () => {
+    setAnchorEl(null);
+  };
 
   return (
     <div id='Nav'>
@@ -61,12 +40,27 @@ export default function Navbar() {
             <input type="checkbox" id="nav-toggle" className="nav-toggle" />
 
             <Box component="section" className="nav-items">
+              {/* Dropdown for GAMES */}
               <Button
-                // onClick={Dropdown}
-                component={Link}
-                sx={{ my: 2, display: 'block' }}>
+                onClick={handleOpenMenu}
+                sx={{ my: 2, display: 'block', color: '#051a6f' }}
+              >
                 GAMES
               </Button>
+              <Menu
+                anchorEl={anchorEl}
+                open={open}
+                onClose={handleCloseMenu}
+                MenuListProps={{
+                  'aria-labelledby': 'basic-button',
+                }}
+              >
+                <MenuItem onClick={handleCloseMenu} component={Link} to="/kickingbrass">
+                  Kicking Brass
+                </MenuItem>
+              </Menu>
+
+              {/* Other Navbar Items */}
               {pages.map((page) => (
                 <Button
                   key={page}
