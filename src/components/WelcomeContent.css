@@ -158,6 +158,7 @@
     font-size: 18px;
     font-style: italic;
     color: #05196b;
+    white-space: nowrap;
 }
 
 /* Arrow Down */
@@ -172,6 +173,12 @@
     color: #05196ba6;
 }
 
+@media (max-width: 1200px) {
+    .quote-section {
+        margin-top: 30%;
+    }
+}
+
 /* Desktop Styles */
 @media (min-width: 768px) {
     .Title {
@@ -180,9 +187,6 @@
         z-index: 5;
     }
 
-    .quote-section {
-        margin-top: 20%;
-    }
 
     .promo-section {
         flex-direction: column;
@@ -272,7 +276,10 @@
     }
 
     .quote-author {
-        font-size: 16px;
+        font-size: 18px;
+        font-style: italic;
+        color: #05196b;
+        white-space: nowrap;
     }
 
     .arrow-down {

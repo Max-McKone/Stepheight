@@ -19,7 +19,7 @@ export default function Welcome() {
         <p className="quote-text">
           <span className="font-bold">"Stepheight is the natural outcome of a <i>desire to make video games.</i>"</span>
         </p>
-        <p className="quote-author">Oskar</p>
+        <p className="quote-author">-Oskar</p>
       </div>
 
       <div className="arrow-down">
