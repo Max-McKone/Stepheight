@@ -17,6 +17,78 @@
     margin-bottom: 10px;
 }
 
+.navbar-default .MuiContainer-maxWidthXl {
+    background-color: #fffde6be !important;
+}
+
+.navbar-default .MuiButton-root {
+    color: #051a6f;
+}
+
+.navbar-kickingbrass .MuiContainer-maxWidthXl {
+    background-color: #1b0c2eca !important;
+}
+
+.navbar-kickingbrass .MuiButton-root {
+    color: #ffe690 !important;
+}
+
+#Nav .MuiToolbar-root {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px 8px 0;
+}
+
+#Nav .MuiBox-root {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+
+.navbar-button {
+    margin: 0 10px;
+    font-family: 'Maven Pro', sans-serif;
+    color: #051a6f;
+}
+
+.navbar-dropdown .MuiPaper-root {
+    background-color: #fffde6 !important;
+    color: #051a6f !important;
+    font-family: 'Maven Pro', sans-serif !important;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2) !important;
+    border-radius: 8px !important;
+}
+
+.navbar-dropdown-item {
+    padding: 10px 20px !important;
+    font-size: 16px !important;
+    font-family: 'Maven Pro', sans-serif !important;
+    color: #051a6f !important;
+}
+
+.navbar-dropdown-item:hover {
+    background-color: #051a6f !important;
+    color: #fff !important;
+}
+
+#Nav .MuiContainer-maxWidthXl {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    max-height: 10%;
+    padding: 0 10%;
+    backdrop-filter: blur(2px);
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.4);
+}
+
+.navbar-logo {
+    width: 80px;
+    top: 0;
+    margin-bottom: 10px;
+}
+
 
 .navbar-default .MuiContainer-maxWidthXl {
     background-color: #fffde6be !important;

@@ -30,7 +30,7 @@ export default function Navbar() {
 
   return (
     <div id='Nav'>
-      <AppBar position="fixed" elevation={0} sx={{ bgcolor: "transparent" }} className={isKickingBrassPage ? 'navbar-kickingbrass' : 'navbar-default'}>
+      <AppBar position="fixed" elevation={0} className={isKickingBrassPage ? 'navbar-kickingbrass' : 'navbar-default'}>
         <Container maxWidth="xl">
           <Toolbar disableGutters>
             <Link to="/">
@@ -43,7 +43,7 @@ export default function Navbar() {
               {/* Dropdown for GAMES */}
               <Button
                 onClick={handleOpenMenu}
-                sx={{ my: 2, display: 'block', color: '#051a6f' }}
+                className="navbar-button"
               >
                 GAMES
               </Button>
@@ -54,8 +54,14 @@ export default function Navbar() {
                 MenuListProps={{
                   'aria-labelledby': 'basic-button',
                 }}
+                className="navbar-dropdown"
               >
-                <MenuItem onClick={handleCloseMenu} component={Link} to="/kickingbrass">
+                <MenuItem
+                  onClick={handleCloseMenu}
+                  component={Link}
+                  to="/kickingbrass"
+                  className="navbar-dropdown-item"
+                >
                   Kicking Brass
                 </MenuItem>
               </Menu>
@@ -66,7 +72,7 @@ export default function Navbar() {
                   key={page}
                   component={Link}
                   to={`/${page.replace('_', '').toLowerCase()}`}
-                  sx={{ my: 2, display: 'block' }}
+                  className="navbar-button"
                 >
                   {page.replace('_', ' ')}
                 </Button>
