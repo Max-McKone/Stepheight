@@ -173,6 +173,38 @@
     color: #05196ba6;
 }
 
+.sticker-container {
+    position: absolute;
+    top: 9%;
+    right: 9%;
+    z-index: 2;
+}
+
+.sticker {
+    background-color: #ff6347;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    animation: pulse 2s infinite ease-in-out;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+}
+
 @media (max-width: 1200px) {
     .quote-section {
         margin-top: 30%;

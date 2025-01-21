@@ -6,6 +6,8 @@
     flex-direction: column;
     align-items: center;
     gap: 30px;
+    z-index: 3;
+
 }
 
 .navbar-icon {
