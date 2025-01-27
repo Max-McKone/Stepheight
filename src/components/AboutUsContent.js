@@ -8,7 +8,7 @@ export default function AboutUsContent() {
     return (
         <div>
             <Banner
-                secondaryTitle={"About Us"}
+                primaryTitle={"About"}
                 imageSrc1={BannerIMG}
             />
 

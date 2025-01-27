@@ -1,6 +1,6 @@
 import React from 'react';
 import './ImpressumContent.css';
-import Banner from './Banner'
+import Banner from './Banner';
 import ImpressumIMG from '../images/Impressm_Banner_Faded.avif';
 
 const Impressum = () => {
@@ -13,12 +13,17 @@ const Impressum = () => {
 
             <div className="impressum-container">
 
+
+                aaa aaaaaaa aaaa aaaa aaaaaa aaaaa aaaaaa aaaaaaaaaaaaaaaaaa aaaaa aaaaaaaaaa aaaaaaa aaaaaaaaa aaaaaaa aaaaaaa aaaaaa aaaaaaa aaaaaaa aaaa aaaaaaa aaaaaaaa aaaaaaaa aaaaa aaaaa aaaaaaaaa aaaaaaaaa aaaaaaa aaaaaaa aaaaaa
+                <h3>aaa aaaaaaa aaaa aaaa aaaaaa aaaaa aaaaaa aaaaaaaaaaaaaaaaaa aaaaa aaaaaaaaaa aaaaaaa aaaaaaaaa aaaaaaa aaaaaaa aaaaaa aaaaaaa aaaaaaa aaaa aaaaaaa aaaaaaaa aaaaaaaa aaaaa aaaaa aaaaaaaaa aaaaaaaaa aaaaaaa aaaaaaa aaaaaa</h3>
+
+
                 <h2>Stepheight UG (Haftungsbeschränkt) i.G.</h2>
-                <p><strong>Address:</strong> Helmholtzstr. 15, 99423 Weimar</p>
+                <p><strong>Address:</strong> Helmholtzstr. 15, 99425 Weimar</p>
                 <p><strong>Managing Director:</strong> Samuel Flentje</p>
                 <p><strong>Email:</strong> <a href="mailto:social@stepheight.com">social@stepheight.com</a></p>
-                <p><strong>VAT ID:</strong> In process</p>
-                <p><strong>Commercial Register:</strong> In process</p>
+                <p><strong>Tax ID:</strong> 162/120/01345</p>
+                <p><strong>Handelsregistereintrag:</strong> HRB 522333</p>
 
                 <h3>Disclaimer</h3>
                 <p>Despite careful content control, we do not assume any liability for the content of external links. The content of linked pages is the sole responsibility of their operators.</p>
@@ -35,7 +40,7 @@ const Impressum = () => {
                 <p>We reserve the right to update this privacy policy to reflect changes in our practices or applicable laws. Any changes will be posted on this page.</p>
             </div>
 
-        </div>
+        </div >
 
     );
 };

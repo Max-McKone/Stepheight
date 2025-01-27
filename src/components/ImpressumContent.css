@@ -1,13 +1,10 @@
 .impressum-container {
-    padding: 20px;
-    padding-top: 5%;
-    margin-left: 25%;
-    padding-bottom: 20%;
+    margin-top: 10%;
     width: 50%;
     background-color: #fffde6;
-    border-radius: 8px;
     color: #051a6f;
-    font-family: 'Arial', sans-serif;
+    background-color: aqua;
+    text-align: center;
 }
 
 .impressum-canvas {
