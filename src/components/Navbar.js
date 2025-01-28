@@ -51,6 +51,7 @@ export default function Navbar() {
               <Menu
                 anchorEl={anchorEl}
                 open={open}
+                disableScrollLock={true}
                 onClose={handleCloseMenu}
                 MenuListProps={{
                   'aria-labelledby': 'basic-button',
