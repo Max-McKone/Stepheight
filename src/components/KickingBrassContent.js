@@ -126,6 +126,8 @@ export default function KickingBrassContent() {
             {value === 2 && <TutorialTab />}
             {value === 3 && <GlossaryTab />}
 
+            <div id='SpaceBuffer'></div>
+
         </div >
     );
 }

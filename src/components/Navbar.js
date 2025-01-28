@@ -32,8 +32,8 @@ export default function Navbar() {
   return (
     <div id='Nav'>
       <AppBar position="fixed" elevation={0} className={isKickingBrassPage ? 'navbar-kickingbrass' : 'navbar-default'}>
-        <Container maxWidth="xl">
-          <Toolbar disableGutters>
+        <div id='NavBarMain'>
+          <div id='NavBarTools'>
             <Link to="/">
               <img src={logo} alt="Logo" className="navbar-logo" />
             </Link>
@@ -95,8 +95,9 @@ export default function Navbar() {
               <span></span>
               <span></span>
             </label>
-          </Toolbar>
-        </Container>
+          </div>
+        </div>
+
       </AppBar>
     </div>
   );
