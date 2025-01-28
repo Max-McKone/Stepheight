@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import KickingBrass from './pages/KickingBrass';
+import UltraPiss from './pages/UltraPiss';
 import AboutUs from './pages/AboutUs';
 import Impressum from './pages/Impressum';
 
@@ -25,6 +26,7 @@ function App() {
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/kickingbrass" element={<KickingBrass />} />
+                    <Route path="/ultrapiss" element={<UltraPiss />} />
                     <Route path="/aboutus" element={<AboutUs />} />
                     <Route path="/impressum" element={<Impressum />} />
                 </Routes>

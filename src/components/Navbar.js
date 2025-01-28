@@ -15,6 +15,7 @@ const pages = ['ABOUT_US'];
 export default function Navbar() {
   const location = useLocation();
   const isKickingBrassPage = location.pathname === '/kickingbrass';
+  const isUltraPissPage = location.pathname === '/ultrapiss';
 
   // State for dropdown menu
   const [anchorEl, setAnchorEl] = useState(null);
@@ -63,6 +64,15 @@ export default function Navbar() {
                   className="navbar-dropdown-item"
                 >
                   Kicking Brass
+                </MenuItem>
+
+                <MenuItem
+                  onClick={handleCloseMenu}
+                  component={Link}
+                  to="/ultrapiss"
+                  className="navbar-dropdown-item"
+                >
+                  Ultra Piss
                 </MenuItem>
               </Menu>
 
