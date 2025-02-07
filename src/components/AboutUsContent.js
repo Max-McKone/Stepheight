@@ -145,7 +145,6 @@ export default function AboutUsContent() {
 
             <div id='AboutusElement'>
                 <img src={Poster} alt="teamimg" className="CollageIMGSpecial" />
-
             </div>
 
         </div>

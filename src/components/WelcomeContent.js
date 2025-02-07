@@ -71,7 +71,7 @@ export default function Welcome() {
           <div className="sticker">NEW</div>
         </div>
 
-        <a href={'./kickingbrass'}><img src={kb_banner} alt="teamimg" className="kb-banner-image" /></a>
+        <a href={"/kickingbrass"}><img src={kb_banner} alt="teamimg" className="kb-banner-image" /></a>
 
       </div>
 
