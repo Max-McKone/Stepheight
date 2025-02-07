@@ -3,12 +3,13 @@ import './WelcomeContent.css';
 import Banner from './Banner';
 import { Link } from 'react-router-dom';
 
-import BannerIMG from '../images/Wimmel_Banner_Faded.avif';
+import BannerIMG from '../images/Wimmel_Banner_Faded.png';
 import primaryTitle from '../images/STEPHEIGHT.gif';
-import kb_banner from '../images/KB_Banner_Faded.avif';
+import kb_banner from '../images/Main_Poster.jpg';
 import kb_logo from '../images/logo_KB.avif';
 
 export default function Welcome() {
+  /*
   const [loadedImages, setLoadedImages] = useState({});
   const imagesRefs = useRef([]);
 
@@ -36,9 +37,7 @@ export default function Welcome() {
     };
   }, []);
 
-  return (
-    <div className="welcome-page">
-      <Banner imageSrc1={BannerIMG} />
+  <Banner imageSrc1={BannerIMG} />
       <img
         ref={(el) => (imagesRefs.current[0] = el)}
         className="Title"
@@ -46,14 +45,20 @@ export default function Welcome() {
         src={loadedImages[primaryTitle] ? primaryTitle : ""}
         alt="STEPHEIGHT TITLE"
       />
+  */
+
+  return (
+    <div id="welcome-page">
+
+      <Banner id='aboutus-banner'
+        primaryTitle={"STEPHEIGHT"}
+        imageSrc1={BannerIMG}
+      />
 
       <div className="quote-section">
         <p className="quote-text">
-          <span className="font-bold">
-            "Stepheight is the natural outcome of a <i>desire to make video games.</i>"
-          </span>
+          the natural outcome of a <b>desire to make video games.</b>
         </p>
-        <p className="quote-author">-Oskar</p>
       </div>
 
       <div className="arrow-down">
@@ -61,28 +66,15 @@ export default function Welcome() {
       </div>
 
       <div className="kb-banner">
+
         <div className="sticker-container">
           <div className="sticker">NEW</div>
         </div>
 
-        <img
-          ref={(el) => (imagesRefs.current[1] = el)}
-          className="kb-banner-image"
-          data-src={kb_banner}
-          src={loadedImages[kb_banner] ? kb_banner : ""}
-          alt="KB Banner"
-        />
+        <a href={'./kickingbrass'}><img src={kb_banner} alt="teamimg" className="kb-banner-image" /></a>
 
-        <Link to="/kickingbrass" className="kb-logo-link">
-          <img
-            ref={(el) => (imagesRefs.current[2] = el)}
-            className="kb-logo"
-            data-src={kb_logo}
-            src={loadedImages[kb_logo] ? kb_logo : ""}
-            alt="KB Logo"
-          />
-        </Link>
       </div>
+
     </div>
   );
 }

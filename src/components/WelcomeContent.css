@@ -1,4 +1,8 @@
 /* WelcomePage.css */
+#welcome-page {
+    text-align: center;
+    min-height: 100vh;
+}
 
 /* Title Base Styles */
 .Title {
@@ -109,15 +113,19 @@
 /* KB Banner */
 .kb-banner {
     position: relative;
-    width: 100%;
+    max-width: 80%;
+    margin-left: 10%;
+    height: fit-content;
+    margin-bottom: 10vw;
 }
 
-.kb-banner-image {
+.kb-banner img {
     width: 100%;
-    height: 200%;
     display: block;
     object-fit: cover;
+    box-shadow: 0px 0px .40vw rgb(75, 70, 33);
 }
+
 
 .kb-logo-link {
     position: absolute;
@@ -140,17 +148,12 @@
 
 /* Quote Section */
 .quote-section {
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 10%;
-    margin-top: 20%;
-    align-items: center;
-    padding: 20px;
-    font-size: 24px;
+    max-width: 100%;
+    margin-top: 3.5vw;
+    font-size: 2em;
 }
 
 .quote-text {
-    margin-right: 10px;
     color: #05196b;
 }
 
@@ -164,13 +167,14 @@
 /* Arrow Down */
 .arrow-down {
     text-align: center;
-    margin-top: 20%;
-    margin-bottom: 2%;
+    margin-bottom: 1%;
+    max-height: fit-content;
+    margin-top: 5vw !important;
 }
 
 .arrow-down i {
-    font-size: 2em;
-    color: #05196ba6;
+    font-size: 3em;
+    color: #0026bd !important;
 }
 
 .sticker-container {
@@ -205,11 +209,7 @@
     }
 }
 
-@media (max-width: 1200px) {
-    .quote-section {
-        margin-top: 30%;
-    }
-}
+@media (max-width: 1200px) {}
 
 /* Desktop Styles */
 @media (min-width: 768px) {
@@ -297,16 +297,6 @@
         transform: none;
     }
 
-    .quote-section {
-        display: flex;
-        justify-content: flex-end;
-        margin-right: 5%;
-        margin-left: 15%;
-        align-items: center;
-        padding: 20px;
-        font-size: 24px;
-    }
-
     .quote-author {
         font-size: 18px;
         font-style: italic;
@@ -314,9 +304,6 @@
         white-space: nowrap;
     }
 
-    .arrow-down {
-        margin-top: 60%;
-    }
 
     .kb-logo {
         width: 100%;

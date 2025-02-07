@@ -7,14 +7,14 @@ const Impressum = () => {
     return (
         <div className='impressum-canvas'>
             <Banner
-                secondaryTitle={"Impressum"}
+                primaryTitle={"Impressum"}
                 imageSrc1={ImpressumIMG}
             />
 
             <div className="impressum-container">
 
                 <h2>Stepheight UG (Haftungsbeschränkt) i.G.</h2>
-                <p><strong>Address:</strong> Helmholtzstr. 15, 99425 Weimar</p>
+                <p><strong>Address:</strong> Boegeholdstr. 19, 07745 Jena</p>
                 <p><strong>Managing Director:</strong> Samuel Flentje</p>
                 <p><strong>Email:</strong> <a href="mailto:social@stepheight.com">social@stepheight.com</a></p>
                 <p><strong>Tax ID:</strong> 162/120/01345</p>

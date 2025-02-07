@@ -35,12 +35,8 @@
     left: 0;
 }
 
-.TabImg {
-    min-width: 100%;
-}
-
 .TabImg img {
-    min-width: 100%;
+    width: 100%;
 }
 
 #KB_Canvas .TabElement {

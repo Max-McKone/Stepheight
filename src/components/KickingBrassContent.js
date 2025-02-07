@@ -7,7 +7,7 @@ import Button from '@mui/material/Button';
 import CardHeader from '@mui/material/CardHeader';
 
 import kb_logo from '../images/logo_KB.avif';
-import kb_banner from '../images/KB_Banner_Faded.avif';
+import kb_banner from '../images/KB_Banner_Faded.png';
 import banner01 from '../images/banner_01.jpg';
 import kb_img1 from '../images/Promo_art_bw.png';
 import controlsGif from '../images/Controls.gif';

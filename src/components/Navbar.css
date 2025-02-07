@@ -5,6 +5,7 @@
     padding-top: 0 !important;
     float: left;
     margin-top: 1vh;
+
 }
 
 #NavBarMain {
@@ -192,15 +193,10 @@
     background: #ffe690;
 }
 
-@media (min-width: 750px) {
-    .navbar-logo {
-        padding-top: 20px;
-    }
-}
 
 @media (max-width: 750px) {
     .navbar-logo {
-        height: 90% !important;
+        height: 80% !important;
     }
 
     .nav-toggle {
@@ -249,9 +245,7 @@
 
     }
 
-    .nav-toggle:checked~.nav-icons {
-        background-color: aqua;
-    }
+
 
     .nav-toggle:checked~.nav-toggle-label span:nth-child(1) {
         top: 0px;

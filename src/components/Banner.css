@@ -9,7 +9,7 @@
 
 .Banner .primary-title {
     position: absolute;
-    top: 32%;
+    top: 90%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 10vw;
@@ -115,16 +115,8 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        overflow: hidden;
     }
 
-    .Banner .primary-title {
-        position: absolute;
-        width: 80%;
-        margin: 0;
-        left: auto;
-        transform: none;
-    }
 
     .Banner .BannerIMG1 {
         position: relative;
@@ -145,12 +137,6 @@
 @media (min-width: 750px) {
     .Banner {
         width: 100%;
-    }
-
-    .Banner .primary-title {
-        width: 90%;
-        margin-top: 20%;
-        z-index: 5;
     }
 
     h3 {
