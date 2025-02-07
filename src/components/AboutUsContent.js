@@ -6,13 +6,13 @@ import TeamIMG from '../images/startup_group.jpg';
 
 export default function AboutUsContent() {
     return (
-        <div>
-            <Banner
+        <div id='aboutus-canvas'>
+            <Banner id='aboutus-banner'
                 primaryTitle={"About"}
                 imageSrc1={BannerIMG}
             />
 
-            <div className="aboutus-content">
+            <div id="aboutus-container">
                 <h3>
                     Three indie devs, setting out to create innovative games, hand in hand with their community!
                 </h3>

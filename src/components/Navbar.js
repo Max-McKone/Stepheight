@@ -73,7 +73,7 @@ export default function Navbar() {
                   to="/ultrapiss"
                   className="navbar-dropdown-item"
                 >
-                  Ultra Piss
+                  PROJECT UP
                 </MenuItem>
               </Menu>
 

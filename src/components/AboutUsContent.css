@@ -1,31 +1,32 @@
-p {
-    max-width: 600px;
-}
-
-.aboutus-content {
-    text-align: center;
+#aboutus-container {
+    margin-top: 10%;
+    width: 50%;
     background-color: #fffde6;
+    color: #051a6f;
+    text-align: center;
+    margin-left: 25%;
 }
 
-.aboutus-content h1 {
+#aboutus-container h1 {
     font-size: 2.5em;
     margin-bottom: 20px;
     color: #051a6f;
 }
 
-.aboutus-content h3 {
+#aboutus-container h3 {
     font-size: 1.5em;
     margin-bottom: 20px;
     color: #051a6f;
 }
 
-.aboutus-content p {
+#aboutus-container p {
     color: #051a6f;
     font-size: 1em;
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
     text-align: left;
+    max-width: 600px;
 }
 
 .TeamIMG {

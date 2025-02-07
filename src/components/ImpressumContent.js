@@ -13,11 +13,6 @@ const Impressum = () => {
 
             <div className="impressum-container">
 
-
-                aaa aaaaaaa aaaa aaaa aaaaaa aaaaa aaaaaa aaaaaaaaaaaaaaaaaa aaaaa aaaaaaaaaa aaaaaaa aaaaaaaaa aaaaaaa aaaaaaa aaaaaa aaaaaaa aaaaaaa aaaa aaaaaaa aaaaaaaa aaaaaaaa aaaaa aaaaa aaaaaaaaa aaaaaaaaa aaaaaaa aaaaaaa aaaaaa
-                <h3>aaa aaaaaaa aaaa aaaa aaaaaa aaaaa aaaaaa aaaaaaaaaaaaaaaaaa aaaaa aaaaaaaaaa aaaaaaa aaaaaaaaa aaaaaaa aaaaaaa aaaaaa aaaaaaa aaaaaaa aaaa aaaaaaa aaaaaaaa aaaaaaaa aaaaa aaaaa aaaaaaaaa aaaaaaaaa aaaaaaa aaaaaaa aaaaaa</h3>
-
-
                 <h2>Stepheight UG (Haftungsbeschränkt) i.G.</h2>
                 <p><strong>Address:</strong> Helmholtzstr. 15, 99425 Weimar</p>
                 <p><strong>Managing Director:</strong> Samuel Flentje</p>

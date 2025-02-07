@@ -16,8 +16,8 @@
 .Items-card {
     max-width: 100% !important;
     color: #a16edd !important;
-    background-color: rgba(0, 0, 0, 0);
-    box-shadow: none;
+    background-color: rgba(0, 0, 0, 0) !important;
+    box-shadow: none !important;
 }
 
 .kb_canvas {
@@ -36,11 +36,11 @@
 }
 
 .TabImg {
-    max-width: 100%;
+    min-width: 100%;
 }
 
 .TabImg img {
-    max-width: 100%;
+    min-width: 100%;
 }
 
 #KB_Canvas .TabElement {

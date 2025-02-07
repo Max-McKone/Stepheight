@@ -27,7 +27,8 @@
 .navbar-button {
     font-family: 'Maven Pro', sans-serif;
     color: #051a6f;
-
+    font-size: large !important;
+    font-weight: bold !important;
     min-width: 30% !important;
 }
 
